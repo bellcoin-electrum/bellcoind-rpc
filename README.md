@@ -1,33 +1,29 @@
-bitcoind-rpc.js
+bellcoind-rpc.js
 ===============
 
-[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcoind-rpc.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcoind-rpc)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcoind-rpc.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcoind-rpc?branch=master)
-
-A client library to connect to Bitcoin Core RPC in JavaScript.
+A client library to connect to Bellcoin Core RPC in JavaScript.
 
 ## Get Started
 
-bitcoind-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+bellcoind-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc
+npm install git://github.com/bellcoin-electrum/bellcoind-rpc.git
 ```
 
 ## Examples
 
 ```javascript
 var run = function() {
-  var bitcore = require('bitcore');
-  var RpcClient = require('bitcoind-rpc');
+  var bitcore = require('bellcore');
+  var RpcClient = require('bellcoind-rpc');
 
   var config = {
     protocol: 'http',
     user: 'user',
     pass: 'pass',
     host: '127.0.0.1',
-    port: '18332',
+    port: '35252',
   };
 
   var rpc = new RpcClient(config);
@@ -75,3 +71,4 @@ var run = function() {
 **Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).**
 
 Copyright 2013-2014 BitPay, Inc.
+Copyright 2018-2019 Bellcoin developerss

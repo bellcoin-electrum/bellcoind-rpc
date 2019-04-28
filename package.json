@@ -1,9 +1,9 @@
 {
-  "name": "bitcoind-rpc",
-  "description": "Bitcoin Client Library to connect to Bitcoin Core via RPC",
+  "name": "bellcoind-rpc",
+  "description": "Bellcoin Client Library to connect to Bellcoin Core via RPC",
   "version": "0.6.0",
   "author": {
-    "name": "Stephen Pair",
+    "name": "y-chan <yuto_tetuota@yahoo.co.jp>",
     "email": "stephen@bitpay.com"
   },
   "contributors": [
@@ -25,18 +25,18 @@
     }
   ],
   "keywords": [
-    "bitcoin",
+    "bellcoin",
     "rpc"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcoind-rpc"
+    "url": "https://github.com/bellcoin-electrum/bellcoind-rpc"
   },
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test -R spec",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --recursive"
+    "test": "mocha test -R spec",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- --recursive"
   },
   "devDependencies": {
     "async": "^0.9.0",
@@ -47,7 +47,7 @@
     "sinon": "^1.12.2"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/bitcoind-rpc/issues"
+    "url": "https://github.com/bellcoin-electrum/bellcoind-rpc/issues"
   },
-  "homepage": "https://github.com/bitpay/bitcoind-rpc"
+  "homepage": "https://github.com/bellcoin-electrum/bellcoind-rpc"
 }
